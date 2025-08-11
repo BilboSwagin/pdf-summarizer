@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PDF Summarizer</title>
+    <style>
+        #drop-zone {
+            border: 2px dashed #ccc;
+            padding: 20px;
+            text-align: center;
+            margin: 20px;
+        }
+        #drop-zone.dragover {
+            border-color: #000;
+            background: #f0f0f0;
+        }
+        #summary {
+            margin: 20px;
+        }
+        button {
+            margin: 10px;
+        }
+    </style>
+</head>
+<body>
+    <h1>PDF Summarizer</h1>
+    <div id="drop-zone">Drag and drop PDF files here</div>
+    <div id="summary"></div>
+    <button id="download-btn" disabled>Download Summary as Excel</button>
+
+    <!-- Include libraries -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/pdf.js/2.10.377/pdf.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/xlsx/0.18.5/xlsx.full.min.js"></script>
+    <script src="script.js"></script> <!-- Your custom JS -->
+</body>
+</html>
